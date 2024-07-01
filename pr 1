@@ -1,0 +1,29 @@
+# Install and set up Python and essential libraries like NumPy and pandas.
+Installing Python:
+1. Download Python: Go to the official Python website download the latest 
+version suitable for your operating system (Windows, macOS, or Linux).
+2. Install Python:
+• For Windows: Run the downloaded installer and make sure to check the 
+box that says "Add Python x.x to PATH" during installation.
+• For Linux: Python might already be installed. If not, use your package 
+manager to install it (e.g., sudo apt-get install python3 for Ubuntu).
+3. Verify Installation:
+• Open a command prompt (Windows) or terminal (macOS/Linux).
+• Type python --version or python3 --version and press Enter. You 
+should see the installed Python version.
+Installing NumPy and pandas:
+1. Using pip:
+• Pip is Python's package manager. It usually comes installed with Python. 
+Open a terminal/command prompt.
+2. Install NumPy:
+• Type pip install numpy and press Enter. This command will download 
+and install NumPy.
+3. Install pandas:
+• Type pip install pandas and press Enter. This will download and install 
+pandas.
+4. Verify installations:
+• Open a Python interpreter by typing python or python3 in the terminal.
+• Inside the interpreter, import NumPy and pandas:
+import numpy
+import pandas
+If no errors occur, both libraries are installed correctly.
