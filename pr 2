@@ -30,17 +30,22 @@ use have made it a go-to choose in various domains, including finance,
 healthcare, natural language processing, and more. It's widely used in research 
 and production environments.
 
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn import metrics
+# Load Iris dataset (a popular example dataset in machine learning)
 iris = load_iris()
-X = iris.data  # Features
-y = iris.target  # Target variable
-
+X = iris.data # Features
+y = iris.target # Target variable
+# Split the dataset into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
-
+# Initialize the model (K-Nearest Neighbors Classifier in this case)
 model = KNeighborsClassifier(n_neighbors=3)
-
+# Train the model
 model.fit(X_train, y_train)
-
+# Make predictions
 predictions = model.predict(X_test)
-
+# Evaluate model accuracy
 accuracy = metrics.accuracy_score(y_test, predictions)
 print(f"Accuracy: {accuracy}")
