@@ -1,0 +1,51 @@
+# Check Python installation 
+>> python --version
+>>
+>> # Check pip installation
+>> pip --version
+>>
+>> # Download get-pip.py if pip is not installed
+>> curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+>>
+>> # Install pip if necessary
+>> python get-pip.py
+>>
+>> # Upgrade pip
+>> python -m pip install --upgrade pip
+>>
+>> # Install Jupyter Notebook
+>> pip install notebook
+>>
+>> # Run Jupyter Notebook
+>> jupyter notebook
+////
+pip install seaborn
+pip install xlrd
+////
+
+import pandas as pd 
+# Load CSV file 
+csv_data = pd.read_csv('train.csv')   
+# Display the first few rows of the CSV file 
+print("First few rows of CSV file:") 
+print(csv_data.head()) 
+# Summary statistics 
+print("\nSummary statistics of CSV file:") 
+print(csv_data.describe()) 
+# Information about columns 
+print("\nInformation about columns in CSV file:") 
+print(csv_data.info()) 
+
+
+import pandas as pd 
+# Load Excel file 
+excel_data = pd.read_excel('Sample - Superstore.xls', sheet_name='Orders')   
+# Display the first few rows of the Excel file 
+print("First few rows of Excel file:") 
+print(excel_data.head()) 
+# Summary statistics 
+print("\nSummary statistics of Excel file:") 
+print(excel_data.describe()) 
+# Information about columns 
+print("\nInformation about columns in Excel file:") 
+print(excel_data.info()) 
